@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <schedulability_test>
+        <!-->
+    <lightred>ff474c</lightred>
+    <pinkishred>f10c45</pinkishred>
+    <coral>fc5a50</coral>
+    <magenta>c20078</magenta>
+
+    <lightgreen>96f97b</lightgreen>
+    <limegreen>89fe05</limegreen>
+    <grassgreen>3f9b0b</grassgreen>
+    <seagreen>53fca1</seagreen>
+
+
+    <lightblue>95d0fc</lightblue>
+    <royalblue>0504aa</royalblue>
+    <navyblue>001146</navyblue>
+    <brightblue>0165fc</brightblue>
+<-->
+        <!-->
+		<data TEST_TYPE="0" REMARK="native">RTA-GFP</data>
+		<data TEST_TYPE="1" REMARK="bc">RTA-GFP</data>
+		<data TEST_TYPE="2" REMARK="gn">RTA-GFP</data>
+		<data REMARK="normal">WF-EDF</data>
+		<data TEST_TYPE="0" REMARK="normal">WF-DM</data>
+		<data TEST_TYPE="1" REMARK="spin">WF-DM</data>
+		<data TEST_TYPE="2" REMARK="semaphore">WF-DM</data>
+		<data TEST_TYPE="0" REMARK="PIP">LP-GFP</data>
+		<data TEST_TYPE="1" REMARK="FMLP">LP-GFP</data>
+		<data TEST_TYPE="0" REMARK="DPCP">LP-PFP</data>
+		<data TEST_TYPE="0" REMARK="">RO-PFP</data>
+		<data TEST_TYPE="0" REMARK="">ILP-SPINLOCK</data>
+		<data TEST_TYPE="0" REMARK="SPIN">GEDF-NON-PREEMPT</data>
+		<data TEST_TYPE="0" REMARK="">PFP-GS</data>
+		<data LP="false" TEST_METHOD="rta"  TEST_TYPE="0" REMARK="native">RTA-GFP</data>
+		<data TEST_TYPE="0" REMARK="GFP">RTA-native</data>
+
+		
+		<data RENAME="" REMARK="">RTA-GFP-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-BC</data>
+		<data RENAME="" REMARK="">RTA-GFP-NG</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF-spinlock</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF-semaphore</data>
+		<data RENAME="" REMARK="">LP-RTA-GFP-PIP</data>
+		<data RENAME="" REMARK="">LP-RTA-GFP-FMLP</data>
+		<data RENAME="" REMARK="">LP-RTA-PFP-DPCP</data>
+		<data RENAME="" REMARK="">LP-RTA-PFP-MPCP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO</data>
+		<data RENAME="" REMARK="">ILP-RTA-PFP-spinlock</data>
+		<data RENAME="" REMARK="">RTA-PFP-GS</data>
+		<data RENAME="" REMARK="">NC-LP-EE-VPR</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-ML</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-NP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-FEASIBLE</data>
+
+		
+		<data RENAME="" REMARK="">RTA-GDC-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-native</data>
+		<data RENAME="" REMARK="">RTA-GDC-native</data>
+		<data RENAME="" REMARK="">RTA-GSMP-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-BC</data>
+		<data RENAME="" REMARK="">RTA-GDC-BC</data>
+		<data RENAME="" REMARK="">RTA-GSMP-BC</data>
+		<data RENAME="" REMARK="">RTA-GSMP2-BC</data>
+		<data RENAME="" REMARK="">RTA-GLO-NG</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO</data>
+		<data RENAME="" REMARK="">RTA-PDC-RO</data>
+		<data RENAME="" REMARK="">RTA-GSMP4-NG</data>
+
+
+		<data RENAME="" REMARK="">NC-LP-EE-VPR</data>
+		<data RENAME="GS" REMARK="">RTA-PFP-GS</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-ML</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-NP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-FEASIBLE</data>
+
+#EXP 
+        <data RENAME="LP-PIP"        >LP-RTA-GFP-PIP</data>
+        <data RENAME="LP-DPCP"       >LP-RTA-PFP-DPCP</data>
+		<data RENAME="ROP-RM"        >RTA-PFP-ROP</data>
+		<data RENAME="GS-MSRP" 	     >RTA-PFP-GS</data>
+
+
+        <data RENAME="GFP-Jose"  >RTA-DAG-GFP-JOSE</data>
+        <data RENAME="GEDF-Hoon" >RTA-DAG-GEDF-HOO-v2</data>
+        <data RENAME="GEDF-Li"   >CAB-DAG-GEDF-LI</data>
+        <data RENAME="GEDF-Mel"  >RTA-DAG-GEDF-MEL</data>
+		<data RENAME="FED-Li"	 >RTA-DAG-FED-LI</data>
+		<data RENAME="SFED-Xu"   >RTA-DAG-SFED-XU</data>
+
+        <data RENAME="spin-FIFO"  >CAB-DAG-FED-SPIN-FIFO</data>
+        <data RENAME="spin-PRIO"  >CAB-DAG-FED-SPIN-PRIO</data>
+        <data RENAME="LPP-Xu"  >RTA-DAG-FED-LPP</data>
+        <data RENAME="hybrid"  >RTA-DAG-FED-HYBRIDLOCKS</data>
+        <data RENAME="hybrid-ILP"  >ILP-RTA-FED-H2LP-v4</data>
+
+<!-->
+        <data RENAME="MPCP">LP-RTA-PFP-MPCP</data>
+        <!--data RENAME="DPCP" >LP-RTA-PFP-DPCP</data>
+		<!--data RENAME="DPCP-ROP"  >RTA-PFP-ROP</data>
+		<!--data RENAME="MSRP-GS" >RTA-PFP-GS</data>
+		<!-- <data RENAME="" >ILP-RTA-PFP-spinlock</data> -->
+        <!-- <data RENAME="LPP"  >RTA-DAG-FED-LPP</data> -->
+        <!-- <data RENAME="POMLP"  >RTA-DAG-FED-OMLP</data> -->
+        <!-- <data RENAME="POMIP"  >RTA-DAG-FED-OMIP</data> -->
+        <!-- <data RENAME="DPCP-p"  >RTA-DAG-FED-DPCP-v2</data> -->
+        <!-- <data RENAME="MPCP-p"  >ILP-RTA-FED-MPCP</data> -->
+        <!-- <data RENAME="C-MPCP"  >ILP-RTA-FED-CMPCP</data> -->
+        <!-- <data RENAME="hybrid-lp"  >ILP-RTA-FED-H2LP-v4</data> -->
+        <!-- <data RENAME="hybrid-U"  >ILP-RTA-FED-H2LP-v4-UTIL</data> -->
+        <!-- <data RENAME="hybrid-H"  >ILP-RTA-FED-H2LP-v4-HEAVY</data> -->
+        <!-- <data RENAME="G-SEM-PFMLP"        >LP-RTA-GFP-PFMLP</data> -->
+        <!-- <data RENAME="G-SEM-PPIP"         >LP-RTA-GFP-PPIP</data> -->
+        <!-- <data RENAME="F-SPIN-F|N"  >RTA-DAG-FED-SPIN-FIFO-XU</data> -->
+        <!-- <data RENAME="F-SPIN-P|N"  >RTA-DAG-FED-SPIN-PRIO-XU</data> -->
+        <!-- <data RENAME="G-SPIN-U|N"    >LP-RTA-GFP-SPIN-XU-UNOR</data> -->
+        <!-- <data RENAME="G-SPIN-F|N"    >LP-RTA-GFP-SPIN-XU-FIFO</data> -->
+        <!-- <data RENAME="G-SPIN-P|N"    >LP-RTA-GFP-SPIN-XU-PRIO</data> -->
+        <!-- <data RENAME="G-SPIN-U|P"    >LP-RTA-GFP-SPIN-XU-UNOR-P</data> -->
+        <!-- <data RENAME="G-SPIN-P|P"    >LP-RTA-GFP-SPIN-XU-PRIO-P</data> -->
+    </schedulability_test>
+    <experiment_times>200</experiment_times>
+    <output>
+        <data FORMAT="PNG" BLACK_ONLY="true">LineChart</data>
+        <data FORMAT="EPS" BLACK_ONLY="true">LineChart</data>
+        <data FORMAT="SVG" BLACK_ONLY="true">LineChart</data>
+        <data FORMAT="TGA" BLACK_ONLY="true">LineChart</data>
+        <data>JSON</data>
+    </output>
+    <task_model>
+        <data>TPS</data>
+        <!-- <data>DAG</data> -->
+    </task_model>
+    <utilization_gen>
+        <!-- <data>UNIFORM</data> -->
+        <!-- <data>EXPONENTIAL</data> -->
+        <!-- <data>UUNIFAST</data> -->
+        <data>UUNIFAST-DISCARD</data>
+        <!-- <data>RANDFIXSUM</data> -->
+    </utilization_gen>
+    <mean>
+        <!-- <data>0.05</data> -->
+        <!-- <data>0.1</data> -->
+        <data>0.25</data>
+        <!-- <data>0.5</data> -->
+        <!-- <data>1</data> -->
+        <!-- <data>2</data> -->
+    </mean>
+    <step>
+        <data>1</data>
+    </step>
+    <init_utilization_range>
+        <data>
+            <min>0</min>
+            <max>8</max>
+        </data>
+    </init_utilization_range>
+    <processor_num>
+        <data>4</data>
+        <!-- <data>8</data> -->
+        <!-- <data>8</data> -->
+        <!-- <data>32</data> -->
+    </processor_num>
+    <processor_ratio>
+        <data>1</data>
+        <data>1</data>
+        <data>1</data>
+        <data>1</data>
+    </processor_ratio>
+    <period_range>
+        <data>
+            <min>10000</min>
+            <max>1000000</max>
+        </data>
+    </period_range>
+    <deadline_propotion>
+        <data>
+            <min>1</min>
+            <max>1</max>
+        </data>
+    </deadline_propotion>
+    <resource_num>
+        <data>0</data>
+        <!-- <data>4</data> -->
+        <!-- <data>8</data> -->
+    </resource_num>
+    <mcsn>//max_critical_section_number
+		<!-- <data>1</data> -->        <data>10000</data>
+    </mcsn>
+    <rrp>//resource_request_probability
+        <!-- <data>0</data> --><!-- <data>0.25</data> -->        <data>0.5</data>
+        <!-- <data>0.75</data> -->
+        <!-- <data>1</data> -->
+    </rrp>
+    <rrn>//resource_request_number
+                <data>5</data>
+        <!-- <data>10</data> -->
+        <!-- <data>15</data> -->
+        <!-- <data>30</data> -->
+        <!-- <data>50</data> -->
+        <!-- <data>50</data> -->
+    </rrn>
+    <rrr>//resource_request_range
+        <!-- <data>
+            <min>1</min>
+            <max>5</max>
+        </data> --><!-- <data>
+            <min>1</min>
+            <max>15</max>
+        </data> -->        <data>            <min>15</min>
+            <max>30</max>
+        </data>
+        <!-- <data>
+            <min>30</min>
+            <max>60</max>
+        </data> -->
+    </rrr>
+    <total_len_factor>
+        <data>1</data>
+    </total_len_factor>
+    <dag_gen>
+        <!-- <data>DEFAULT</data> -->
+        <!-- <data>FORK_JOIN</data> -->
+        <!-- <data>ERDOS_RENYI</data> -->
+        <data>ERDOS_RENY_v2</data>  // Xu's method in DAC 2019
+        <!-- <data>TEST</data>  // mixed of ERDOS_RENYI AND ERDOS_RENYI_V2 --><!-- <data>SIM</data>  // does not generate parallel structure --></dag_gen>
+    <dag_job_num_range>
+        <data>
+            <min>20</min>
+            <max>50</max>
+        </data>
+        <!-- <data>
+            <min>10</min>
+            <max>20</max>
+        </data> -->
+        <!-- <data>
+            <min>20</min>
+            <max>40</max>
+        </data> -->
+        <!-- <data>
+            <min>40</min>
+            <max>80</max>
+        </data> -->
+    </dag_job_num_range>
+    <paralleled_probability>
+        <data>0.1</data>
+    </paralleled_probability>
+    <conditional_probability>
+        <data>0</data>
+    </conditional_probability>
+    <edge_probability>
+        <data>0.1</data>
+    </edge_probability>
+    <max_paralleled_job>
+        <data>32</data>
+    </max_paralleled_job>
+    <max_conditional_branch>
+        <data>3</data>
+    </max_conditional_branch>
+    <dag_arc_density>
+        <data>0.125</data>
+    </dag_arc_density>
+    <dag_arc_num_range>
+        <data>
+            <min>0</min>
+            <max>10</max>
+        </data>
+    </dag_arc_num_range>
+    <is_cyclic>
+        <data>0</data>
+    </is_cyclic>
+    <max_indegree>
+        <data>2</data>
+    </max_indegree>
+    <max_outdegree>
+        <data>2</data>
+    </max_outdegree>
+    <graph_width>
+        <data>800</data>
+    </graph_width>
+    <graph_height>
+        <data>500</data>
+    </graph_height>
+    <graph_quality>
+        <data>3</data>
+    </graph_quality>
+    <graph_legend_pos>
+        <data>0</data>
+    </graph_legend_pos>
+    <graph_title>
+        <data/>
+    </graph_title>
+    <graph_x_label>
+        <!-- <data>Total Utilization</data> -->
+        <data>Normalized Utilization</data>
+        <!-- <data>Number of Tasks</data> -->
+        <!-- <data>Number of Resources</data> -->
+        <!-- <data>Number of Vertices</data> -->
+        <!-- <data>Number of Processors</data> -->
+        <!-- <data>Edge Probability</data> -->
+        <!-- <data>Shared Resource Request Probability</data> -->
+        <!-- <data>Critical Section Length per Request</data> -->
+        <!-- <data>Critical Section Number per Task</data> -->
+        <!-- <data>GPU Segment Ratio</data> -->
+        <!-- <data>GPU Block Size (multiple of 32)</data> -->
+        <!-- <data>Minimum Ratio</data> -->
+    </graph_x_label>
+    <graph_y_label>
+        <data>Acceptance Ratio</data>
+    </graph_y_label>
+    <runtime_check>  // check average runtime, set "0" to disable. Otherwise, enable.
+                <data>1</data>
+    </runtime_check>
+    <reserve_int_1>
+        <data>128</data>
+    </reserve_int_1>
+    <reserve_int_2>  // fixed task number, set "-1" to disable
+                <data>-1</data>
+        <!-- <data>2</data> -->
+        <!-- <data>4</data> -->
+        <!-- <data>6</data> -->
+        <!-- <data>8</data> -->
+        <!-- <data>16</data> -->
+        <!-- <data>20</data> -->
+    </reserve_int_2>
+    <reserve_int_3>
+        <data>0</data>
+    </reserve_int_3>
+    <reserve_int_4>
+        <data>0</data>
+    </reserve_int_4>
+    <reserve_double_1>  // step of varying parameter
+                <data>0.1</data>
+    </reserve_double_1>
+    <reserve_double_2>
+        <data>0</data>
+    </reserve_double_2>
+    <reserve_double_3>  // fixed normalized utilization, set "-1" to disable
+                <data>-1</data>
+        <!-- <data>0.5</data> -->
+    </reserve_double_3>
+    <reserve_double_4>  // upper-bound on critical path utilization 
+        <!-- <data>2</data> -->        <data>0.5</data>
+    </reserve_double_4>
+    <reserve_range_1> // range of varying parameter
+                <data>            <min>0</min>
+            <max>1</max>
+        </data>
+    </reserve_range_1>
+    <reserve_range_2>
+        <data>
+            <min>0.05</min>
+            <max>0.1</max>
+        </data>
+        <!-- <data>
+            <min>0.05</min>
+            <max>0.5</max>
+        </data> -->
+        <!-- <data>
+            <min>0.05</min>
+            <max>0.5</max>
+        </data> -->
+        <!-- <data>
+            <min>0.25</min>
+            <max>0.5</max>
+        </data> -->
+        <!-- <data>
+            <min>10000</min>
+            <max>30000</max>
+        </data> -->
+    </reserve_range_2>
+    <!-- <server_ip>47.106.80.141</server_ip> -->
+    <!-- <server_port>3389</server_port> -->
+    <!-- <server_ip>192.168.0.159</server_ip>  // localhost
+	          <server_port>10000</server_port> -->
+    <server_ip>127.0.0.1</server_ip>  // localhost
+	                  <server_port>10000</server_port>
+    <!-- <server_ip>103.52.217.185</server_ip>
+	  <server_port>8888</server_port> -->
+</parameters>

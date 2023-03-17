@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+	<schedulability_test>
+<!-->
+		<data TEST_TYPE="0" REMARK="native">RTA-GFP</data>
+		<data TEST_TYPE="1" REMARK="bc">RTA-GFP</data>
+		<data TEST_TYPE="2" REMARK="gn">RTA-GFP</data>
+		<data REMARK="normal">WF-EDF</data>
+		<data TEST_TYPE="0" REMARK="normal">WF-DM</data>
+		<data TEST_TYPE="1" REMARK="spin">WF-DM</data>
+		<data TEST_TYPE="2" REMARK="semaphore">WF-DM</data>
+		<data TEST_TYPE="0" REMARK="PIP">LP-GFP</data>
+		<data TEST_TYPE="1" REMARK="FMLP">LP-GFP</data>
+		<data TEST_TYPE="0" REMARK="DPCP">LP-PFP</data>
+		<data TEST_TYPE="0" REMARK="">RO-PFP</data>
+		<data TEST_TYPE="0" REMARK="">ILP-SPINLOCK</data>
+		<data TEST_TYPE="0" REMARK="SPIN">GEDF-NON-PREEMPT</data>
+		<data TEST_TYPE="0" REMARK="">PFP-GS</data>
+		<data LP="false" TEST_METHOD="rta"  TEST_TYPE="0" REMARK="native">RTA-GFP</data>
+		<data TEST_TYPE="0" REMARK="GFP">RTA-native</data>
+
+		
+		<data RENAME="" REMARK="">RTA-GFP-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-BC</data>
+		<data RENAME="" REMARK="">RTA-GFP-NG</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF-spinlock</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF-semaphore</data>
+		<data RENAME="" REMARK="">LP-RTA-GFP-PIP</data>
+		<data RENAME="" REMARK="">LP-RTA-GFP-FMLP</data>
+		<data RENAME="" REMARK="">LP-RTA-PFP-DPCP</data>
+		<data RENAME="" REMARK="">LP-RTA-PFP-MPCP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO</data>
+		<data RENAME="" REMARK="">ILP-RTA-PFP-spinlock</data>
+		<data RENAME="" REMARK="">RTA-PFP-GS</data>
+		<data RENAME="" REMARK="">NC-LP-EE-VPR</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-ML</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-NP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-FEASIBLE</data>
+
+		
+		<data RENAME="" REMARK="">RTA-GDC-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-native</data>
+		<data RENAME="" REMARK="">RTA-GDC-native</data>
+		<data RENAME="" REMARK="">RTA-GSMP-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-BC</data>
+		<data RENAME="" REMARK="">RTA-GDC-BC</data>
+		<data RENAME="" REMARK="">RTA-GSMP-BC</data>
+		<data RENAME="" REMARK="">RTA-GSMP2-BC</data>
+		<data RENAME="" REMARK="">RTA-GLO-NG</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO</data>
+		<data RENAME="" REMARK="">RTA-PDC-RO</data>
+		<data RENAME="" REMARK="">RTA-GSMP4-NG</data>
+
+
+		<data RENAME="" REMARK="">NC-LP-EE-VPR</data>
+		<data RENAME="GS" REMARK="">RTA-PFP-GS</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-ML</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-NP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-FEASIBLE</data>
+
+		
+#EXP1
+		<data RENAME="LP-PIP"	    STYLE="{x000000}2*">LP-RTA-GFP-PIP</data>
+		<data RENAME="LP-FMLP"	    STYLE="{x5B9BD5}2o">LP-RTA-GFP-FMLP</data>
+		<data RENAME="LP-DPCP"      STYLE="{xEB5B5B}2+">LP-RTA-PFP-DPCP</data>
+		<data RENAME="LP-MPCP" 	    STYLE="{x00A000}2s">LP-RTA-PFP-MPCP</data>
+		<data RENAME="GS-MSRP" 	    STYLE="{x8080FF}2d">RTA-PFP-GS</data>
+		<data RENAME="R-PCP-rm"     STYLE="{x0080FF}2v">RTA-PFP-RO-ML</data>
+		<data RENAME="R-PCP-rm-opa" STYLE="{x0080FF}2^">RTA-PFP-RO-OPA</data>
+		<data RENAME="R-PCP-sm"     STYLE="{x0080FF}2#^">RTA-PFP-RO-SM</data>
+		<data RENAME="R-PCP-sm-opa" STYLE="{x0080FF}2#v">RTA-PFP-RO-SM-OPA</data>
+		<data RENAME="R-NP-rm" 	    STYLE="{x44546A}2#s">RTA-PFP-RO-NP</data>
+		<data RENAME="NC"           STYLE="{x954F72}2#d">RTA-PFP-RO-FEASIBLE</data>
+
+
+		<data RENAME="GS" REMARK="">RTA-PFP-GS</data>
+		<data RENAME="ROP-PCP" REMARK="">RTA-PFP-RO-ML</data>
+		<data RENAME="ROP-PCP-OPA" REMARK="">RTA-PFP-RO-OPA</data>
+
+#EXP3
+		<data RENAME="LP-PIP"	    STYLE="{x000000}2*">LP-RTA-GFP-PIP</data>
+		<data RENAME="LP-DPCP"      STYLE="{xEB5B5B}2+">LP-RTA-PFP-DPCP</data>
+		<data RENAME="GS-MSRP" 	    STYLE="{x8080FF}2d">RTA-PFP-GS</data>
+		<data RENAME="LL-EE-vpr"    STYLE="{x5B9BD5}2o">NC-LP-EE-VPR</data>
+		<data RENAME="R-PCP-rm"     STYLE="{x0080FF}2v">RTA-PFP-RO-ML</data>
+		<data RENAME="R-PCP-rm-opa" STYLE="{xED7D31}2=^">RTA-PFP-RO-OPA</data>
+		<data RENAME="R-PCP-sm"     STYLE="{x0080FF}2j#^">RTA-PFP-RO-SM</data>
+		<data RENAME="R-PCP-sm-opa" STYLE="{xED7D31}2:#v">RTA-PFP-RO-SM-OPA</data>
+		<data RENAME="R-NP-rm" 	    STYLE="{x44546A}2:s">RTA-PFP-RO-NP</data>
+		<data RENAME="NC"           STYLE="{x954F72}2=#d">RTA-PFP-RO-FEASIBLE</data>
+
+		
+
+<!-->	
+		<data RENAME="LP-PIP"	    STYLE="{x000000}2*">LP-RTA-GFP-PIP</data>
+		<data RENAME="LP-DPCP"      STYLE="{xEB5B5B}2+">LP-RTA-PFP-DPCP</data>
+		<data RENAME="GS-MSRP" 	    STYLE="{x8080FF}2d">RTA-PFP-GS</data>
+		<data RENAME="LL-EE-vpr"    STYLE="{x5B9BD5}2o">NC-LP-EE-VPR</data>
+		<data RENAME="R-PCP-rm"     STYLE="{x0080FF}2v">RTA-PFP-RO-ML</data>
+		<data RENAME="R-PCP-rm-opa" STYLE="{xED7D31}2=^">RTA-PFP-RO-OPA</data>
+		<data RENAME="R-PCP-sm"     STYLE="{x0080FF}2j#^">RTA-PFP-RO-SM</data>
+		<data RENAME="R-PCP-sm-opa" STYLE="{xED7D31}2:#v">RTA-PFP-RO-SM-OPA</data>
+		<data RENAME="R-NP-rm" 	    STYLE="{x44546A}2:s">RTA-PFP-RO-NP</data>
+		<data RENAME="NC"           STYLE="{x954F72}2=#d">RTA-PFP-RO-FEASIBLE</data>
+	</schedulability_test>
+	<experiment_times>1000</experiment_times>
+	<output>
+		<data FORMAT="PNG" BLACK_ONLY="true" >LineChart</data>
+		<data FORMAT="EPS" BLACK_ONLY="true" >LineChart</data>
+		<data FORMAT="SVG" BLACK_ONLY="true" >LineChart</data>
+		<data FORMAT="TGA" BLACK_ONLY="true" >LineChart</data>
+		<data>JSON</data>
+	</output>
+	<lambda>
+		<data>10</data>
+		<data>4</data>
+	</lambda>
+	<step>
+		<data>0.2</data>
+	</step>
+	<init_utilization_range>
+		<data>
+			<min>0</min>
+			<max>4</max>
+		</data>
+	</init_utilization_range>
+	<processor_num>
+		<data>4</data>	
+	</processor_num>
+	<period_range>
+		<data>
+			<min>10000</min>
+			<max>100000</max>
+		</data>
+		<data>
+			<min>10000</min>
+			<max>1000000</max>
+		</data>
+	</period_range>
+	<deadline_propotion>
+		<data>
+			<min>1</min>
+			<max>1</max>
+		</data>
+	</deadline_propotion>
+	<resource_num>
+		<data>2</data>
+		<data>4</data>
+	</resource_num>
+	<mcsn>//max_critical_section_number
+		<data>1</data>
+	</mcsn>
+	<rrp>//resource_request_probability
+		<data>0.1</data>
+		<data>0.25</data>
+	</rrp>
+	<rrn>//resource_request_number
+		<data>1</data>
+	</rrn>
+	<rrr>//resource_request_range
+		<data>
+			<min>1</min>
+			<max>10</max>
+		</data>
+		<data>
+			<min>20</min>
+			<max>40</max>
+		</data>
+		<data>
+			<min>50</min>
+			<max>80</max>
+		</data>
+	</rrr>
+	<total_len_factor>
+		<data>0.6</data>
+	</total_len_factor>
+	<dag_job_num_range>
+		<data>
+			<min>3</min>
+			<max>3</max>
+		</data>
+	</dag_job_num_range>
+	<paralleled_probability>
+		<data>0.1</data>
+	</paralleled_probability>
+	<conditional_probability>
+		<data>0</data>
+	</conditional_probability>
+	<max_paralleled_job>
+		<data>3</data>
+	</max_paralleled_job>
+	<max_conditional_branch>
+		<data>3</data>
+	</max_conditional_branch>
+	<dag_arc_density>
+		<data>0.2</data>
+	</dag_arc_density>
+	<dag_arc_num_range>
+		<data>
+			<min>0</min>
+			<max>5</max>
+		</data>
+	</dag_arc_num_range>
+	<is_cyclic>
+		<data>0</data>
+	</is_cyclic>
+	<max_indegree>
+		<data>2</data>
+	</max_indegree>
+	<max_outdegree>
+		<data>2</data>
+	</max_outdegree>
+</parameters>

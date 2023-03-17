@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <schedulability_test>
+<!-->
+    <lightred>ff474c</lightred>
+    <pinkishred>f10c45</pinkishred>
+    <coral>fc5a50</coral>
+    <magenta>c20078</magenta>
+
+    <lightgreen>96f97b</lightgreen>
+    <limegreen>89fe05</limegreen>
+    <grassgreen>3f9b0b</grassgreen>
+    <seagreen>53fca1</seagreen>
+
+
+    <lightblue>95d0fc</lightblue>
+    <royalblue>0504aa</royalblue>
+    <navyblue>001146</navyblue>
+    <brightblue>0165fc</brightblue>
+<-->
+        <!-->
+		<data TEST_TYPE="0" REMARK="native">RTA-GFP</data>
+		<data TEST_TYPE="1" REMARK="bc">RTA-GFP</data>
+		<data TEST_TYPE="2" REMARK="gn">RTA-GFP</data>
+		<data REMARK="normal">WF-EDF</data>
+		<data TEST_TYPE="0" REMARK="normal">WF-DM</data>
+		<data TEST_TYPE="1" REMARK="spin">WF-DM</data>
+		<data TEST_TYPE="2" REMARK="semaphore">WF-DM</data>
+		<data TEST_TYPE="0" REMARK="PIP">LP-GFP</data>
+		<data TEST_TYPE="1" REMARK="FMLP">LP-GFP</data>
+		<data TEST_TYPE="0" REMARK="DPCP">LP-PFP</data>
+		<data TEST_TYPE="0" REMARK="">RO-PFP</data>
+		<data TEST_TYPE="0" REMARK="">ILP-SPINLOCK</data>
+		<data TEST_TYPE="0" REMARK="SPIN">GEDF-NON-PREEMPT</data>
+		<data TEST_TYPE="0" REMARK="">PFP-GS</data>
+		<data LP="false" TEST_METHOD="rta"  TEST_TYPE="0" REMARK="native">RTA-GFP</data>
+		<data TEST_TYPE="0" REMARK="GFP">RTA-native</data>
+
+		
+		<data RENAME="" REMARK="">RTA-GFP-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-BC</data>
+		<data RENAME="" REMARK="">RTA-GFP-NG</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF-spinlock</data>
+		<data RENAME="" REMARK="">RTA-PFP-WF-semaphore</data>
+		<data RENAME="" REMARK="">LP-RTA-GFP-PIP</data>
+		<data RENAME="" REMARK="">LP-RTA-GFP-FMLP</data>
+		<data RENAME="" REMARK="">LP-RTA-PFP-DPCP</data>
+		<data RENAME="" REMARK="">LP-RTA-PFP-MPCP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO</data>
+		<data RENAME="" REMARK="">ILP-RTA-PFP-spinlock</data>
+		<data RENAME="" REMARK="">RTA-PFP-GS</data>
+		<data RENAME="" REMARK="">NC-LP-EE-VPR</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-ML</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-NP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-FEASIBLE</data>
+
+		
+		<data RENAME="" REMARK="">RTA-GDC-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-native</data>
+		<data RENAME="" REMARK="">RTA-GDC-native</data>
+		<data RENAME="" REMARK="">RTA-GSMP-native</data>
+		<data RENAME="" REMARK="">RTA-GFP-BC</data>
+		<data RENAME="" REMARK="">RTA-GDC-BC</data>
+		<data RENAME="" REMARK="">RTA-GSMP-BC</data>
+		<data RENAME="" REMARK="">RTA-GSMP2-BC</data>
+		<data RENAME="" REMARK="">RTA-GLO-NG</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO</data>
+		<data RENAME="" REMARK="">RTA-PDC-RO</data>
+		<data RENAME="" REMARK="">RTA-GSMP4-NG</data>
+
+
+		<data RENAME="" REMARK="">NC-LP-EE-VPR</data>
+		<data RENAME="" REMARK="">RTA-PFP-GS</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-ML</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-NP</data>
+		<data RENAME="" REMARK="">RTA-PFP-RO-FEASIBLE</data>
+
+#EXP 
+        <data RENAME="LP-PIP"        >LP-RTA-GFP-PIP</data>  // RTAS 2015 GFP semaphore
+        <data RENAME="LP-DPCP"       >LP-RTA-PFP-DPCP</data>  // RTAS 2013 PFP semaphore
+		<data RENAME="ROP-RM"        >RTA-PFP-ROP</data>  // ROP-PFP
+		<data RENAME="GS-MSRP" 	     >RTA-PFP-GS</data>  // MSRP: Greedy-stack
+
+        <data RENAME="GEDF-Li"   >CAB-DAG-GEDF-LI</data>  // TC 2017 GFP 
+        <data RENAME="GEDF-Mel"  >RTA-DAG-GEDF-MEL</data>  // TC 2017 GEDF 
+		<data RENAME="FED-Li"	 >RTA-DAG-FED-LI</data>  // ECRTS 2014 Federated EDF 
+		<data RENAME="SFED-Xu"   >RTA-DAG-SFED-XU</data>  // semi-FED
+        <data RENAME="GFP-Jose"  >RTA-DAG-GFP-JOSE</data>  // SOA GFP
+        <data RENAME="GEDF-Hoon" >RTA-DAG-GEDF-HOO-v2</data>  // SOA GEDF
+
+        <data RENAME="spin-FIFO"  >CAB-DAG-FED-SPIN-FIFO</data>  // TPDS spin-FIFO-Son
+        <data RENAME="spin-PRIO"  >CAB-DAG-FED-SPIN-PRIO</data>  // TPDS spin-PRIO-Son
+        <data RENAME="LPP-Xu"  >RTA-DAG-FED-LPP</data>  // DAC 2019 LPP
+        <data RENAME="OMLP-p"  >RTA-DAG-FED-OMLP</data>  // RTSS 2019 OPLP-p
+        <data RENAME="OMIP-p"  >RTA-DAG-FED-OMIP</data>  // RTSS 2019 OPIP-p
+        <data RENAME="DPCP-p"  >RTA-DAG-FED-DPCP</data>  // DAC 2020 DPCP-p-EP
+        <data RENAME="DPCP-p-v2"  >RTA-DAG-FED-DPCP-v2</data>  // DAC 2020 DPCP-p-EN
+
+<!-->
+        <data RENAME="spin-FIFO"  >CAB-DAG-FED-SPIN-FIFO</data>
+        <data RENAME="LPP-Xu"  >RTA-DAG-FED-LPP</data>
+        <data RENAME="DPCP-p"  >RTA-DAG-FED-DPCP</data>  // EP
+    </schedulability_test>
+    <experiment_times>100</experiment_times>
+    <output>
+        <data FORMAT="PNG" BLACK_ONLY="true">LineChart</data>
+        <data FORMAT="EPS" BLACK_ONLY="true">LineChart</data>
+        <data FORMAT="SVG" BLACK_ONLY="true">LineChart</data>
+        <data FORMAT="TGA" BLACK_ONLY="true">LineChart</data>
+        <data>JSON</data>
+    </output>
+    <task_model>
+        <!-- <data>TPS</data> -->
+        <data>DAG</data>
+    </task_model>
+    <utilization_gen>
+        <!-- <data>UNIFORM</data> -->
+        <!-- <data>EXPONENTIAL</data> -->
+        <!-- <data>UUNIFAST</data> -->
+        <!-- <data>UUNIFAST-DISCARD</data>  // for light tasks only -->
+        <data>RANDFIXSUM</data>  // for heavy&light tasks
+    </utilization_gen>
+    <mean>  // utilization mean
+        <data>2</data>
+    </mean>
+    <step> // [abandoned]: use reserve_double_1 instead
+        <data>1</data>
+    </step>
+    <init_utilization_range>  // [abandoned]: use reserve_range_1 instead
+        <data>
+            <min>0</min>
+            <max>8</max>
+        </data>
+    </init_utilization_range>
+    <processor_num>
+        <!-- <data>8</data> -->
+        <data>16</data>
+    </processor_num>
+    <processor_ratio>
+        <data>1</data>
+        <data>1</data>
+        <data>1</data>
+        <data>1</data>
+    </processor_ratio>
+    <period_range>  // if use ERDOS_RENY_v2 and TEST for task generation, period_range will not take effect.
+        <data>
+            <min>10000</min>
+            <max>1000000</max>
+        </data>
+    </period_range>
+    <deadline_propotion>  // [default]: implicit deadline
+        <data>
+            <min>1</min>
+            <max>1</max>
+        </data>
+    </deadline_propotion>
+    <resource_num>
+        <data>4</data>
+    </resource_num>
+    <mcsn>  // max critical section number of a task (for all resource): 
+		<data>10000</data>
+    </mcsn>
+    <rrp>  // resource request probability
+        <!-- <data>0</data> -->
+        <data>0.5</data>
+        <!-- <data>0.75</data> -->
+    </rrp>
+    <rrn>  // resource request number
+        <!-- <data>5</data> -->
+        <!-- <data>15</data> -->
+        <data>30</data>
+    </rrn>
+    <rrr>  // resource request range
+        <!-- <data>
+            <min>1</min>
+            <max>15</max>
+        </data> -->
+        <data>
+            <min>15</min>
+            <max>30</max>
+        </data>
+    </rrr>
+    <total_len_factor>  // [abandoned]
+        <data>1</data>
+    </total_len_factor>
+    <dag_gen>
+        <!--         
+        DEFAULT: [not available yet]
+        FORK_JOIN: [not available yet]
+        ERDOS_RENYI: WCETs of vertices randomly split the total WCET [period range setting takes effect]
+        ERDOS_RENYI_v2: WCETs of vertices are uniformly selected from a range
+        TEST: WCETs of vertices are uniformly selected from a range
+         -->
+        <!-- <data>DEFAULT</data> -->
+        <!-- <data>FORK_JOIN</data> -->
+        <!-- <data>ERDOS_RENYI</data>  // Maolin's method in DAC 2020 -->
+        <!-- <data>ERDOS_RENY_v2</data>  // Xu's method in DAC 2019 -->
+        <data>TEST</data>  // mixed of ERDOS_RENYI AND ERDOS_RENYI_V2
+    </dag_gen>
+    <dag_job_num_range>  // range of the number of vertices
+        <data>
+            <min>10</min>
+            <max>50</max>
+        </data>
+    </dag_job_num_range>
+    <paralleled_probability>
+        <data>0.1</data>
+    </paralleled_probability>
+    <conditional_probability>
+        <data>0</data>
+    </conditional_probability>
+    <edge_probability>  // probability to create an edge in erdos-renyi algorithm
+        <data>0.1</data>
+    </edge_probability>
+    <max_paralleled_job>  // maximum parallel degree of a fork-join task
+        <data>32</data>
+    </max_paralleled_job>
+    <max_conditional_branch>  // [experimental]
+        <data>3</data>
+    </max_conditional_branch>
+    <dag_arc_density>  // [experimental]
+        <data>0.125</data>
+    </dag_arc_density>
+    <dag_arc_num_range>  // [experimental]
+        <data>
+            <min>0</min>
+            <max>10</max>
+        </data>
+    </dag_arc_num_range>
+    <is_cyclic>  // [experimental]
+        <data>0</data>
+    </is_cyclic>
+    <max_indegree>  // [experimental]
+        <data>2</data>
+    </max_indegree>
+    <max_outdegree>  // [experimental]
+        <data>2</data>
+    </max_outdegree>
+    <graph_width>  // [mathGL parameter]
+        <data>800</data>
+    </graph_width>
+    <graph_height>  // [mathGL parameter]
+        <data>500</data>
+    </graph_height>
+    <graph_quality>  // [mathGL parameter]
+        <data>3</data>
+    </graph_quality>
+    <graph_legend_pos>  // [mathGL parameter]
+        <data>3</data>
+    </graph_legend_pos>
+    <graph_title>  // [mathGL parameter]
+        <data/>
+    </graph_title>
+    <graph_x_label>  // [mathGL parameter] & varying parameter
+        <!-- <data>Total Utilization</data> -->
+        <data>Normalized Utilization</data>
+        <!-- <data>Number of Tasks</data> -->
+        <!-- <data>Number of Resources</data> -->
+        <!-- <data>Number of Vertices</data> -->
+        <!-- <data>Edge Probability</data> -->
+        <!-- <data>Shared Resource Request Probability</data> -->
+        <!-- <data>Critical Section Length per Request</data> -->
+        <!-- <data>Critical Section Number per Task</data> -->
+    </graph_x_label>
+    <graph_y_label>  // [mathGL parameter]
+        <data>Acceptance Ratio</data>
+    </graph_y_label>
+    <runtime_check>  // check average runtime, set "0" to disable. Otherwise, enable.
+        <data>1</data>  
+    </runtime_check>
+    <reserve_int_1>
+        <data>128</data>
+    </reserve_int_1>
+    <reserve_int_2>  // fixed task number, set "-1" to disable
+        <!-- <data>-1</data> -->
+        <!-- <data>4</data> -->
+        <data>8</data>
+    </reserve_int_2>
+    <reserve_int_3>
+        <data>0</data>
+    </reserve_int_3>
+    <reserve_int_4>
+        <data>0</data>
+    </reserve_int_4>
+    <reserve_double_1>  // step of varying parameter
+        <data>0.05</data>
+    </reserve_double_1>
+    <reserve_double_2>
+        <data>0</data>
+    </reserve_double_2>
+    <reserve_double_3>  // fixed normalized utilization, set "-1" to disable
+        <data>-1</data>
+        <!-- <data>0.5</data> -->
+    </reserve_double_3>
+    <reserve_double_4>  // upper-bound on critical path utilization 
+        <data>1</data>
+        <!-- <data>100</data> -->
+    </reserve_double_4>
+    <reserve_range_1> // range of varying parameter
+        <data>
+            <min>0</min>
+            <max>1</max>
+        </data>
+    </reserve_range_1>
+    <reserve_range_2>
+        <data>
+            <min>0</min>
+            <max>1</max>
+        </data>
+    </reserve_range_2>
+    <server_ip>127.0.0.1</server_ip>  // localhost
+	<server_port>10000</server_port>
+</parameters>
